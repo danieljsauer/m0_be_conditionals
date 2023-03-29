@@ -3,18 +3,16 @@ while num < 100
 num = (num +1)
 
     if num % 3 == 0 && num % 5 == 0
-        print "Fizz Buzz"
+        puts "Fizz Buzz"
 
     elsif num % 5 == 0
-        print "Buzz"
+        puts "Buzz"
 
     elsif num % 3 == 0 
-        print "Fizz"
+        puts "Fizz"
 
     else
-        print num
+        puts num
     end 
-
-print "\n"
 
 end 
