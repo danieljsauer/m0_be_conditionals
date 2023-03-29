@@ -10,7 +10,7 @@
   # if it is snowy, print "coat"
   # if it is icy, print "yak traks"
 
-weather = "sunny"
+weather = "cloudy"
 
 if weather == "sunny"
   p "sunscreen"
@@ -23,6 +23,8 @@ elsif weather == "icy"
 else
   p "good to go!"
 end
+
+print "\n"
 
 # Experiment with manipulating the value held in variable 'weather'
 # to print something other than 'sunscreen'
@@ -41,11 +43,18 @@ end
 # Experiment with manipulating the value held within num_quarters
 # to make sure both conditions can be achieved.
 
-num_quarters = 0
+num_quarters = 3
 
-puts "I have enough money for a gumball"
-puts "I don't have enough money for a gumball"
+if num_quarters > 1 
+  num_quarters = (num_quarters - 2)
 
+  puts "I have enough money for a gumball"
+  print "I have ", num_quarters, " quarter(s) left"
+else
+  puts "I don't have enough money for a gumball"
+end
+
+puts "\n\n"
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -61,5 +70,13 @@ puts "I don't have enough money for a gumball"
 # Experiment with manipulating the value held within both variables
 # to make sure all above conditions output what you expect.
 
-cups_of_flour = 1
+cups_of_flour = 3
 has_sauce = true
+
+
+if cups_of_flour > 1 && has_sauce == true
+
+  puts "I can make pizza!"
+else
+  puts "I cannot make pizza :("
+end 
